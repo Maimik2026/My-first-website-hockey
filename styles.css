@@ -5,11 +5,24 @@ body {
     color: white;
 }
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 #navigaatio {
     display: flex;
     justify-content: flex-end;
     padding: 10px 30px;
     border-bottom: 2px solid gold;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background: black;
+    /* ВОТ ЭТО КЛЮЧ */
 }
 
 #navigaatio ul {
@@ -30,6 +43,8 @@ body {
 }
 
 #esittely {
+    position: relative;
+    /* обязательно */
     height: 200px;
     max-width: 1073px;
     margin: 30px auto;
@@ -38,6 +53,22 @@ body {
     background-position: center;
     text-align: center;
     padding-top: 80px;
+    overflow: hidden;
+}
+
+#esittely::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* регулируешь затемнение */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    /* чтобы текст был поверх */
 }
 
 .hero-content h1 {
