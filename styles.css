@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: black;
+    color: white;
+}
+
+#navigaatio {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 30px;
+    border-bottom: 2px solid gold;
+}
+
+#navigaatio ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navigaatio a {
+    color: gold;
+    text-decoration: none;
+}
+
+#navigaatio a:hover {
+    color: white;
+}
+
+#esittely {
+    height: 200px;
+    max-width: 1073px;
+    margin: 30px auto;
+    background-image: url(img/navigaatio.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.hero-content h1 {
+    color: gold;
+}
+
+.sisalto {
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
+    background: #111;
+}
+
+.hero-content p {
+    color: #ddd;
+    text-shadow: 1px 1px 3px black;
+}
+
+.teksti {
+    flex: 1;
+}
+
+.teksti h2 {
+    color: gold;
+}
+
+.image img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #333;
+    padding: 10px;
+}
+
+th {
+    background: #222;
+    color: gold;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+}
+
+#gallery {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+    background: #111;
+}
+
+#gallery h2 {
+    color: gold;
+}
+
+.card {
+    width: 30%;
+    background: #111;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+footer {
+    background-color: #323131;
+    text-align: right;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .sisalto {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    #esittely {
+        height: 150px;
+        padding-top: 50px;
+    }
+
+    table {
+        font-size: 11px;
+    }
+
+    th,
+    td {
+        padding: 5px;
+    }
+}
